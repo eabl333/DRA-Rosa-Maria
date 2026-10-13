@@ -37,9 +37,9 @@ document.querySelectorAll('[data-img]').forEach(el=>{
   im.onerror=()=>console.warn('A imagem "'+el.dataset.img+'" não carregou. Confira o link:',u);
   im.src=u;
 });
-if(IMAGENS.logo)document.querySelectorAll('[data-logo]').forEach(a=>a.innerHTML='<img referrerpolicy="no-referrer" src="'+IMAGENS.logo+'" alt="Dra. Kamille Gallego Vieira">');
+if(IMAGENS.logo)document.querySelectorAll('[data-logo]').forEach(a=>a.innerHTML='<img referrerpolicy="no-referrer" src="'+IMAGENS.logo+'" alt="Dra. Rosa Maria">');
 
-const NUM='5516996257573',wa=t=>'https://wa.me/'+NUM+'?text='+encodeURIComponent(t||'Olá! Gostaria de agendar uma consulta com a Dra. Kamille.');
+const NUM='5516993357325',wa=t=>'https://wa.me/'+NUM+'?text='+encodeURIComponent(t||'Olá! Gostaria de agendar uma consulta com a Dra. Rosa Maria.');
 document.querySelectorAll('[data-wa]').forEach(a=>{a.href=wa();a.target='_blank';a.rel='noopener'});
 const hd=document.getElementById('hd');addEventListener('scroll',()=>hd.classList.toggle('s',scrollY>40),{passive:true});
 // reveal
