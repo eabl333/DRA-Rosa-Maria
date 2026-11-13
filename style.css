@@ -1,49 +1,3 @@
-Anexo do usuário
-
-Texto colado(8).txt
-Documento
-o bota do whatsapp ta meio tronço deixa ele bonito igual do app e me de o codigo css completo
-
-Erick, ajustei o botão do WhatsApp para ficar com aparência mais profissional, semelhante aos botões flutuantes dos aplicativos modernos. 😎
-
-O novo botão terá:
-
-Formato perfeitamente circular.
-
-Gradiente verde moderno.
-
-Ícone branco centralizado.
-
-Sombra elegante com efeito de profundidade.
-
-Animação suave de pulsação.
-
-Efeito ao passar o mouse.
-
-Efeito ao clicar.
-
-Ajuste para celulares.
-
-Prioridade de exibição sobre outros elementos.
-
-CSS completo atualizado
-Botão WhatsApp renovado
-
-Verde moderno, sombra e animação suave.
-
-Baixe o CSS completo atualizado:
-
-estilo-completo-whatsapp-ajustado.css
-
-Arquivo completo · 475 linhas
-Pronto
- Baixar CSS completo
-
-Substitua o conteúdo do seu arquivo CSS atual por esse arquivo. O restante do layout foi preservado.
-
-
-estilo-completo-whatsapp-ajustado.css
-Código
 :root{--wine:#240810;--wine2:#3a0d1a;--rose:#b8506e;--gold:#d9b27c;--green:#25d366;--navy:#0f172a;--soft:#f7f5f3;--txt:#5b6478;
 --serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -456,7 +410,3 @@ header .btn{padding:9px 11px;font-size:.56rem}
 .cc .ib svg{width:46px;height:46px}
 .cc:hover .ib{transform:scale(1.06) rotate(-4deg)}
 @media(max-width:620px){.cc .ib svg{width:36px;height:36px}}
-
-
-
-
