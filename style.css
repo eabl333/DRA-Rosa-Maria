@@ -25,8 +25,11 @@ svg{width:20px;height:20px;flex:none}
 header{position:fixed;top:0;left:0;right:0;z-index:50;height:84px;display:flex;align-items:center;background:rgba(28,8,14,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.05);transition:.4s}
 header.s{height:68px;background:rgba(36,8,16,.96)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%}
-.logo{font-family:var(--serif);color:var(--gold);display:flex;align-items:center;gap:6px;font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;line-height:1.2}
-.logo b{font-size:2.6rem;font-style:italic;font-weight:500;letter-spacing:-.1em}
+.logo{font-family:var(--serif);color:var(--gold);display:flex;align-items:center;gap:6px;font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;line-height:1.2;min-width:0}
+/* CORREÇÃO: o monograma "RM" nunca pode quebrar nem encolher */
+.logo b{font-size:2.6rem;font-style:italic;font-weight:500;letter-spacing:-.1em;flex:none;white-space:nowrap;min-width:auto;overflow-wrap:normal;word-wrap:normal;line-height:1}
+.logo span{min-width:0}
+header .btn{flex:none;white-space:nowrap}
 nav{display:flex;gap:44px}
 nav a{font-size:.68rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase;opacity:.85;position:relative;transition:.3s}
 nav a:after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold);transition:.35s}
@@ -282,8 +285,13 @@ footer{flex-direction:column;gap:30px;text-align:center}
 @media(max-width:620px){
 .wrap{padding:0 20px}
 header{height:72px}header.s{height:60px}
-header .btn{padding:11px 16px;font-size:.62rem;letter-spacing:.1em}
-.logo img{height:44px}
+header .wrap{gap:10px}
+header .btn{padding:10px 14px;font-size:.6rem;letter-spacing:.08em;gap:8px}
+header .btn svg{width:16px;height:16px}
+/* CORREÇÃO: logo compacto no celular */
+.logo{gap:5px;font-size:.5rem;letter-spacing:.02em;line-height:1.25;flex:1 1 auto}
+.logo b{font-size:2rem}
+.logo img{height:40px}
 
 .hero .txt{padding-top:40px}
 .hero h1{font-size:clamp(2rem,10vw,2.8rem);line-height:1.1}
@@ -382,6 +390,9 @@ h2{font-size:1.6rem}
 .btn{font-size:.66rem;letter-spacing:.06em;padding:16px 18px}
 .score{padding:20px}
 .how .q{font-size:1rem}
+.logo{font-size:.46rem}
+.logo b{font-size:1.8rem}
+header .btn{padding:9px 11px;font-size:.56rem}
 }
 
 /* imagens */
